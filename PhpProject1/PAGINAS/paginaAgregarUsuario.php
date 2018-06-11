@@ -12,7 +12,7 @@ and open the template in the editor.
     <body>
         <form action="agregar.php" method="POST">
             <table border="0">
-                
+
                 <tbody>
                     <tr>
                         <td>Rut</td>
@@ -23,13 +23,14 @@ and open the template in the editor.
                         <td><input type="text" name="txtNombre" value="" /></td>
                     </tr>
                     <tr>
+                        <td>Apellido Paterno</td>
+                        <td><input type="text" name="txtApPat" value="" /></td>
+                    </tr>
+                    <tr>
                         <td>Apellido Materno</td>
                         <td><input type="text" name="txtApMat" value="" /></td>
                     </tr>
-                    <tr>
-                        <td>Apellido Paterno</td>
-                        <td><input type="text" name="ApPat" value="" /></td>
-                    </tr>
+
                     <tr>
                         <td>Contraseña</td>
                         <td><input type="text" name="txtContra" value="" /></td>

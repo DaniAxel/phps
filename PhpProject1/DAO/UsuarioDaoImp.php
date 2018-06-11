@@ -14,11 +14,11 @@ class UsuarioDaoImp implements usuarioDao{
             $stmt = $pdo->prepare("insert into usuario(rut,nombre,"
                     . "ape_paterno,ape_materno,contrasena) values(?,?,?,?,?)");
             
-            $stmt->bindParam(1, $dto->getRut());
-            $stmt->bindParam(2, $dto->getNombre());
-            $stmt->bindParam(3, $dto->getApPaterno());
-            $stmt->bindParam(4, $dto->getApMaterno());
-            $stmt->bindParam(5, $dto->getContrasena());
+            $stmt->bindValue(1, $dto->getRut());
+            $stmt->bindValue(2, $dto->getNombre());
+            $stmt->bindValue(3, $dto->getApPaterno());
+            $stmt->bindValue(4, $dto->getApMaterno());
+            $stmt->bindValue(5, $dto->getContrasena());
             
             $stmt->execute();
             if($stmt->rowCount()>0){
